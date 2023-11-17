@@ -1,0 +1,118 @@
+{
+  "products": [
+    {
+      "name": "Sản phẩm 2",
+      "price": "34542",
+      "img": "https://picsum.photos/200/300",
+      "des": "The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more",
+      "id": 6
+    },
+    {
+      "name": "Sản phẩm 3",
+      "price": "34542",
+      "img": "https://picsum.photos/200/300",
+      "des": "The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more",
+      "id": 7
+    },
+    {
+      "name": "Sản phẩm 4",
+      "price": "89",
+      "img": "https://picsum.photos/200/300",
+      "des": "The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more",
+      "id": 8
+    },
+    {
+      "name": "Sản phẩm 5",
+      "price": "43634",
+      "img": "https://picsum.photos/200/300",
+      "des": "The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more",
+      "id": 9
+    },
+    {
+      "name": "Sản phẩm 6",
+      "price": "46",
+      "img": "https://picsum.photos/200/300",
+      "des": "The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more",
+      "id": 10
+    },
+    {
+      "name": "Sản phẩm 7",
+      "price": "46",
+      "img": "https://picsum.photos/200/300",
+      "des": "The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more",
+      "id": 11
+    },
+    {
+      "name": "Sản phẩm 8",
+      "price": "46",
+      "img": "https://picsum.photos/200/300",
+      "des": "The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more",
+      "id": 12
+    },
+    {
+      "name": "Sản phẩm 9",
+      "price": "46",
+      "img": "https://picsum.photos/200/300",
+      "des": "The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more",
+      "id": 13
+    },
+    {
+      "name": "Sản phẩm 10",
+      "price": "46",
+      "img": "https://picsum.photos/200/300",
+      "des": "The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more",
+      "id": 14
+    },
+    {
+      "name": "Sản phẩm 11",
+      "price": "46",
+      "img": "https://picsum.photos/200/300",
+      "des": "The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more",
+      "id": 15
+    },
+    {
+      "name": "gàbffgjhgjh",
+      "price": 34,
+      "img": "https://picsum.photos/200/300",
+      "des": "sfsddfhfghgj",
+      "id": 16
+    },
+    {
+      "name": "gà",
+      "price": 9,
+      "img": "https://picsum.photos/200/300",
+      "des": "adhakjjjjjj",
+      "id": 17
+    },
+    {
+      "name": "gà",
+      "price": 80,
+      "img": "https://picsum.photos/200/300",
+      "des": "ádsgfdhdfs",
+      "id": 18
+    },
+    {
+      "name": "hoaptph29645",
+      "price": 1675,
+      "img": "https://picsum.photos/200/300",
+      "des": "fhfdhgfyykhjhgf",
+      "id": 19
+    }
+  ],
+  "user": [
+    {
+      "name": "ấdsd",
+      "email": "sskskfj@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 19
+    },
+    {
+      "name": "pth",
+      "email": "sskskfj@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 20
+    }
+  ]
+}

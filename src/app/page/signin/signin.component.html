@@ -1,0 +1,81 @@
+
+
+    
+<div class="d-flex align-items-center py-4 bg-body-tertiary">
+    <main class="form-signin w-100 m-auto bg-dark-subtle">
+        <form  [formGroup]="formSignin">
+         
+          <h1 class="h3 mb-3 fw-normal">Sign in</h1>
+          <!-- <div class="form-floating mb-2">
+            <input type="email" class="form-control" formControlName="name"   id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Tên người dùng</label>
+          </div> -->
+          <div class="form-floating mb-2">
+            <input type="email" class="form-control" formControlName="email" [(ngModel)]="email"  name="email"  id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+            <div
+            class="error"
+            *ngIf="
+                formSignin.get('email')?.hasError('required') &&
+                (formSignin.get('email')?.touched ||
+                    formSignin.get('email')?.dirty)
+            "
+             >
+            Email required
+            </div>
+            <div
+            class="error"
+            *ngIf="
+                formSignin.get('email')?.hasError('email') &&
+                (formSignin.get('email')?.touched ||
+                    formSignin.get('email')?.dirty)
+            "
+        >
+            Viết đúng kí tự email
+        </div>
+
+          </div>
+          <div class="form-floating mb-2">
+            <input type="password" class="form-control" formControlName="password" [(ngModel)]="password" name="password"  id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+            <div
+            class="error"
+            *ngIf="
+                formSignin.get('password')?.hasError('required') &&
+                (formSignin.get('password')?.touched ||
+                    formSignin.get('password')?.dirty)
+            "
+        >
+            password required
+        </div>
+        <div
+            class="error"
+            *ngIf="
+                formSignin.get('password')?.hasError('minlength') &&
+                (formSignin.get('password')?.touched ||
+                    formSignin.get('password')?.dirty)
+            "
+        >
+            min 6 ky tu
+        </div>
+          </div>
+          <div class="form-floating mb-2">
+            <input type="password" class="form-control" formControlName="confirmPassword" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Confirm Password</label>
+            <div
+            class="error"
+            *ngIf="
+                formSignin?.hasError('notMatch') &&
+                (formSignin.get('confirmPassword')?.touched ||
+                    formSignin.get('confirmPassword')?.dirty)
+            "
+        >
+            Khong trung mat khau
+        </div>
+          </div>
+         
+          <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+        
+        </form>
+      </main> 
+    </div>

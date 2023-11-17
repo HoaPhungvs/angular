@@ -1,0 +1,85 @@
+
+<h3>{{mode === 'create' ? 'Thêm' : ' Cập nhật'}} sản phẩm</h3>
+<form (ngSubmit)="onSubmit()" [formGroup] = "productForm">
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Tên sản phẩm</label>
+        <input type="text" class="form-control" id="name" placeholder="Tên sản phẩm" formControlName="name">
+        <div
+        class="error"
+        *ngIf="
+        productForm.get('name')?.hasError('required') &&
+            (productForm.get('name')?.touched ||
+                productForm.get('name')?.dirty)
+        "
+         >
+        name required
+        </div>
+
+
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Img</label>
+        <input type="text" class="form-control" id="img" placeholder="Anh sản phẩm" formControlName="img">
+        <div
+        class="error"
+        *ngIf="
+        productForm.get('img')?.hasError('required') &&
+            (productForm.get('img')?.touched ||
+                productForm.get('img')?.dirty)
+        "
+         >
+        img required
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Gía sản phẩm</label>
+        <input type="number" class="form-control" id="price" placeholder="Gía sản phẩm" formControlName="price">
+        <div
+        class="error"
+        *ngIf="
+        productForm.get('price')?.hasError('required') &&
+            (productForm.get('price')?.touched ||
+                productForm.get('price')?.dirty)
+        "
+         >
+        price required
+        </div>
+        <div
+        class="error"
+        *ngIf="
+        productForm.get('price')?.hasError('min') &&
+            (productForm.get('price')?.touched ||
+                productForm.get('price')?.dirty)
+        "
+         >
+        lớn hơn 0
+        </div>
+      
+      </div>
+      <div class="mb-3">
+        <label for="des" class="form-label">Mô tả</label>
+        <textarea class="form-control" id="des" rows="3" formControlName="des"></textarea>
+        <div
+        class="error"
+        *ngIf="
+        productForm.get('des')?.hasError('required') &&
+            (productForm.get('des')?.touched ||
+                productForm.get('des')?.dirty)
+        "
+         >
+        des required 
+        </div>
+        <div
+        class="error"
+        *ngIf="
+        productForm.get('des')?.hasError('minlength') &&
+            (productForm.get('des')?.touched ||
+                productForm.get('des')?.dirty)
+        "
+         >
+        des hơn 10 kí tự
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">{{mode === 'create' ? 'Thêm' : 'Cập nhật'}} sản phẩm</button>
+</form>
